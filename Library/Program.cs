@@ -26,11 +26,13 @@ namespace Library
             Console.WriteLine(book.isavailability(book2));
             book.OrderBook(book);
 
-            GuestList.AddGuest("aaa");
-            GuestList.AddGuest("bbb");
-            GuestList.AddGuest("ccc");
-            GuestList.AddGuest("ddd");
-            GuestList.PrintGuestList();
+            List<string> guestLists = new List<string>();
+
+            GuestList.AddGuest(guestLists,"aaa");
+            GuestList.AddGuest(guestLists, "bbb");
+            GuestList.AddGuest(guestLists, "ccc");
+            GuestList.AddGuest(guestLists, "ddd");
+            GuestList.PrintGuestList(guestLists);
             Console.ReadLine();
         }
 
@@ -40,17 +42,21 @@ namespace Library
         static public List<string> _guestLists = new List<string>();
 
       
-        static public void AddGuest(string name)
+        static public void AddGuest(List<string> guests,string name)
         {
-            _guestLists.Add(name);
+            guests.Add(name);
         }
 
-        static public void PrintGuestList()
+        static public void PrintGuestList(List<string> guests)
         {
-            foreach (var item in _guestLists)
+
+            foreach (var item in guests)
             {
+
                 Console.WriteLine(item);
+           
             }
+
         }
     }
 }
