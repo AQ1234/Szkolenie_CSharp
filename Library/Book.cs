@@ -18,7 +18,7 @@ namespace Library
             _numberInShop = numberInShop;
         }
 
-        public bool GetKindOfCover { get; set; } //Czy Cover to okładka?
+        public bool GetKindOfCover { get; set; } 
         
         public int GetNumberOfPages { get; set; }
 

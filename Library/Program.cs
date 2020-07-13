@@ -21,7 +21,6 @@ namespace Library
             Book book = new Book("Rhytm of war", 213, 1);
             Book book2 = new Book("City of mirror", 1113, 0);
             Book book3 = new Book("Wither", 9911, 11);
-
             Console.WriteLine(book.isavailability(book));
             Console.WriteLine(book.isavailability(book2));
             book.OrderBook(book);
@@ -32,16 +31,19 @@ namespace Library
             GuestList.AddGuest(guestLists, "bbb");
             GuestList.AddGuest(guestLists, "ccc");
             GuestList.AddGuest(guestLists, "ddd");
+            GuestList.AddGuest(guestLists, "eee");
             GuestList.PrintGuestList(guestLists);
+
+          
+            GuestList.NewAddGuest(guestLists);
+
             Console.ReadLine();
         }
 
     }
     static public class GuestList
     {
-        static public List<string> _guestLists = new List<string>();
-
-      
+        
         static public void AddGuest(List<string> guests,string name)
         {
             guests.Add(name);
@@ -56,7 +58,19 @@ namespace Library
                 Console.WriteLine(item);
            
             }
-
+        }
+        static public List<string> NewAddGuest(List<string> guests)
+        {
+            guests = new List<string>();
+            guests.Add("AAA");
+            guests.Add("BBB");
+            guests.Add("CCC");
+            
+            foreach (var item in guests)
+            {
+                Console.WriteLine(item);
+            }
+            return guests;
         }
     }
 }
