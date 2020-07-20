@@ -1,6 +1,0 @@
-C:\Users\Admin\source\repos\Library\bin\Debug\Library.exe.config
-C:\Users\Admin\source\repos\Library\bin\Debug\Library.exe
-C:\Users\Admin\source\repos\Library\bin\Debug\Library.pdb
-C:\Users\Admin\source\repos\Library\obj\Debug\Library.csprojAssemblyReference.cache
-C:\Users\Admin\source\repos\Library\obj\Debug\Library.exe
-C:\Users\Admin\source\repos\Library\obj\Debug\Library.pdb
